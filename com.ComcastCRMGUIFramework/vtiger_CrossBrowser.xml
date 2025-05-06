@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Suite">
 	<listeners>
-		<listener class-name="com.comcast.crm.generic.ListenerUtility.ListenerClass.java" />
+		<listener class-name="com.comcast.crm.generic.ListenerUtility.ListenerClass" />
 	</listeners>
 	<test name="TestRunner-1">
 		<parameter name="browser" value="edgge" />
