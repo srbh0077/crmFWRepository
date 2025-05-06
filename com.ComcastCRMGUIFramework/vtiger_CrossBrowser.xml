@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Suite">
+	<listeners>
+		<listener class-name="com.comcast.crm.generic.ListenerUtility.ListenerClass.java" />
+	</listeners>
+	<test name="TestRunner-1">
+		<parameter name="browser" value="edgge" />
+		<classes>
+			<class name="com.comcast.crm.TestNG_BaseClass.CreateProducts_Test" />
+			<class name="com.comcast.crm.TestNG_BaseClass.CreatePriceBook_Test" />
+			<class name="com.comcast.crm.TestNG_BaseClass.CreateLeads_Test" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="TestRunner-2">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.comcast.crm.TestNG_BaseClass.CreateProducts_Test" />
+			<class name="com.comcast.crm.TestNG_BaseClass.CreatePriceBook_Test" />
+			<class name="com.comcast.crm.TestNG_BaseClass.CreateLeads_Test" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.comcast.crm.generic.ListenerUtility.ListenerClass.java" />
+	</listeners>
+	<test thread-count="2" name="Test">
+		<groups>
+			<run>
+				<exclude name="integration" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.comcast.crm.TestNG_BaseClass.CreateContact_Test" />
+			<class name="com.comcast.crm.TestNG_BaseClass.CreateOrganization_Test" />
+			<class name="com.comcast.crm.TestNG_BaseClass.CreateProducts_Test" />
+			<class name="com.comcast.crm.TestNG_BaseClass.CreateCampaign_Test" />
+			<class name="com.comcast.crm.TestNG_BaseClass.CreatePriceBook_Test" />
+			<class name="com.comcast.crm.TestNG_BaseClass.CreateLeads_Test" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
